@@ -226,17 +226,14 @@ class Bot_Alive:
             link = [chat_id, int(message_id)]
         return link_type, link
 
-    @staticmethod
-    def alive_info(me):
-        u_name = " ".join([me.first_name, me.last_name or ""])
-        alive_info = f"""
-­<a href="https://t.me/xplugin"><b>𝐒𝐇𝐀𝐑𝐈𝐍𝐆𝐀𝐍</a> is on and analysing.</b>
-
-  🐍   <b>Python      :</b>    <code>v{versions.__python_version__}</code>
+   @staticmethod
+    def alive_info() -> str:
+        alive_info_ = f"""
+<a href="https://t.me/Zer0ByteOfficial"><b>MASTERBYTE</a> is Up and Running.</b>
+  🐍   <b>Python :</b>    <code>v{versions.__python_version__}</code>
   🔥   <b>Pyrogram :</b>    <code>v{versions.__pyro_version__}</code>
-  🧬   <b>𝑿                :</b>    <code>v{get_version()}</code>
-  👤   <b>User          :</b>    <code>{u_name}</code>
-  <b>{Bot_Alive._get_mode()}</b>        <code>|</code>    🕔  <b>{userge.uptime}</b>
+  🧬   <b>𝑿 :</b>    <code>v{get_version()}</code>
+<b>{Bot_Alive._get_mode()}</b>    <code>|</code>    🕔  <b>{userge.uptime}</b>
 """
         return alive_info
 
