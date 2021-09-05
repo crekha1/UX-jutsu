@@ -227,6 +227,7 @@ class Bot_Alive:
         return link_type, link
 
    @staticmethod
+
     def alive_info() -> str:
         alive_info_ = f"""
 <a href="https://t.me/Zer0ByteOfficial"><b>MASTERBYTE</a> is Up and Running.</b>
